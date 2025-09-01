@@ -2,12 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+     <div id="app">
+
+  <div class="cpf-card">
+    <span id="cpf-number">000.000.000-00</span>
+  </div>
+
+  <div class="controls">
+    <div class="option">
+      <input type="checkbox" id="punctuation" checked>
+      <label for="punctuation">Incluir pontuação (./-)</label>
+    </div>
+  </div>
+
+  <button id="generate-btn">Gerar CPF</button>
+
+</div>
+ <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
